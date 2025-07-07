@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    background-color: bisque;
+}
+.blogTableClass{
+    border-style:solid; 
+    margin-left: 380px; 
+    align-content: center;
+    margin-top: 40px;
+}
+.form-group{
+    margin-top: 15px;
+}
+.form-group small {
+    display: block;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 3px;
+}
+.form-group .error-message {
+  display: block;
+  color: #e74c3c; /* Red for error messages */
+  font-size: 0.9em;
+  margin-top: 5px;
+  min-height: 1em; /* Reserve space to prevent layout shifts */
+}

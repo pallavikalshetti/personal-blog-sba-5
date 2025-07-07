@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Personal Blog Platform </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Personal Blog</h1>
+    <section id="addblog-section" style="display: block;">
+        <form id="add-blog">
+            <div class="form-group">
+                <label for="blogtitle">Title:</label>
+                <input type="text" id="inputBlogTitle" name="inputBlogTitle" minlength="2" maxlength="10" required>
+                <span class="error-message" id="inputBlogTitleError"></span>
+            </div>
+            <div class="form-group" style="margin-right: 20px;">
+                <label for="blogcontent">Content:</label>
+                <textarea id="inputBlogContent" name="inputBlogContent" minlength="2" maxlength="100" required> </textarea>
+                <small>Content must not to exceed 100 characters</small>
+                <span class="error-message" id="usrBlogContentError"></span>
+            </div>
+            <div class="form-group">
+            <button type="submit">Submit Blog</button>
+            </div>
+        </form>
+            <p id="formErrorMsg"></p>
+            <p id="formSuccessMsg"></p>
+    </section>
+    <section id="editblog-section" style="display: none;">
+        <form id="edit-blog">
+            <div class="form-group">
+                <label for="blogtitleEdit">Blog ID:</label>
+                <label for="blogtitleEdit" id="editBlogId"></label>
+            </div>
+            <div class="form-group">
+                <label for="blogtitleEdit">Title:</label>
+                <input type="text" id="inputBlogTitleEdit" name="inputBlogTitleEdit" minlength="2" maxlength="10" required>
+                <span class="error-message" id="inputBlogTitleErrorEdit"></span>
+            </div>
+            <div class="form-group" style="margin-right: 20px;">
+                <label for="blogcontentEdit">Content:</label>
+                <textarea id="inputBlogContentEdit" name="inputBlogContentEdit" minlength="2" maxlength="100" required> </textarea>
+                <small>Content must not to exceed 100 characters</small>
+                <span class="error-message" id="usrBlogContentErrorEdit"></span>
+            </div>
+            <div class="form-group">
+            <button onclick="editBlogItemDetails()">Edit Blog</button>
+            </div>
+        </form>
+            <p id="formEditErrorMsg"></p>
+            <p id="formEditSuccessMsg"></p>
+    </section>
+    <table id="blogTable" class="blogTableClass" >
+        <tr>
+            <th style="width: 150px;">Title</th>
+            <th style="width: 150px;">Content</th>
+            <th style="width: 150px;">Action</th>
+        </tr>
+        <tbody id="displayBlogList"> </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
