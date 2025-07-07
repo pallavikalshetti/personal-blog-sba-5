@@ -10,7 +10,7 @@ Users should be able to:
 - View previously submitted blogs
 - Update and Remove the blogs
 
-- Solution URL: [https://github.com/pallavikalshetti/dynamic-shopping-car]
+- Solution URL: [https://github.com/pallavikalshetti/personal-blog-sba-5]
 
 ### Built with
 
